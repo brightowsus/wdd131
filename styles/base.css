@@ -1,0 +1,218 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+/* CSS Variables for easy color changes */
+:root {
+  --primary-color: #003366;      /* Dark blue header/footer */
+  --secondary-color: #f2f2f2;    /* Light gray background */
+  --accent-color: #ffc107;       /* Bright accent (gold/yellow) */
+  --text-color: #333;
+  --nav-hover-color: #005fa3;    /* hover color for nav links */
+  --card-border: #ddd;
+  --footer-bg: #003366;
+  --footer-text: #ffffff;
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 1rem;
+}
+
+.header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.header-title .student-name {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+header span#course-title {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Navigation */
+nav {
+  margin-top: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--footer-text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--nav-hover-color);
+  border-radius: 4px;
+}
+
+/* Main */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+/* media query for larger screens */
+@media (min-width: 800px) {
+  main {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+
+
+/* Cards */
+.card {
+  background-color: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  background-color: var(--primary-color);
+  color: var(--footer-text);
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* About Card Layout */
+.about-card .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about-card .about-text {
+  flex: 2;
+  min-width: 250px;
+}
+
+.about-card .about-photo {
+  flex: 1;
+  min-width: 200px;
+}
+
+.about-card .about-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.about-card .country-section {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-card .country-section img {
+  width: 120px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+
+.about-card .country-section p {
+  flex: 1;
+  margin: 0;
+}
+
+.about-text h3{
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Horizontal Rule */
+hr {
+  border: none;
+  border-top: 1px solid var(--card-border);
+  margin: 1rem 0;
+}
+
+/* Resources List */
+.card ul {
+  margin-top: 1rem;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.card ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.card ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer #lastModified {
+  color: var(--accent-color);
+}
