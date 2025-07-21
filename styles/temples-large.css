@@ -1,0 +1,25 @@
+/* temples-large.css */
+@media (min-width: 768px) {
+
+  main .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  figure {
+    text-align: left;
+  }
+    .hamburger {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem
+  }
+
+  nav ul.show {
+    display: flex; /* fallback to default flex for large */
+  }
+}
+
