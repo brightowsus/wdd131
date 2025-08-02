@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a country place by Bright Owusu">
+    <meta name="author" content="Bright Owusu">
+    <title>Country Page - Bright Owusu</title>
+    <link rel="stylesheet" href="styles/place.css" >
+    <link rel="stylesheet" href="styles/place-large.css" >
+</head>
+<body>
+    <header>
+        <h1>Ghana</h1>
+    </header>
+
+    <main>
+        <section class="hero-container">
+    <img 
+        src="images/hero-large.webp" 
+        srcset="
+            images/hero-large.webp 600w, 
+            images/hero-large.webp 1024w, 
+            images/hero-large.webp 1440w
+        "
+        sizes="(max-width: 600px) 100vw, 
+               (max-width: 1024px) 100vw, 
+               100vw"
+        alt="Scenic view of the Accra, Ghana"
+        class="hero-img">
+
+    <!-- Overlay info (will move on top in desktop view) -->
+    <div class="overlay">
+        <div class="data">
+            <h2>Data</h2>
+            <p><strong>Population:</strong> 2.5M</p>
+            <p><strong>Founded:</strong> 1877</p>
+            <p><strong>Region:</strong> Greater Accra</p>
+            <p><strong>Currency:</strong> Ghana Cedi</p>
+            <p><strong>Language:</strong> English</p>
+        </div>
+
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon">
+            <p><strong>Temperature:</strong> 8°C</p>
+            <p><strong>Condition:</strong> Sunny</p>
+            <p><strong>Humidity:</strong> 65%</p>
+            <p><strong>Wind:</strong> 10 km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Bright Owusu - Ghana </p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
