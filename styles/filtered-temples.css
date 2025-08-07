@@ -1,4 +1,11 @@
-/* === HEADER STYLING === */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
 header {
   background-color: #004080; /* deep blue */
   color: white;
