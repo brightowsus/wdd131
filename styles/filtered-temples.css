@@ -1,0 +1,126 @@
+/* === HEADER STYLING === */
+header {
+  background-color: #004080; /* deep blue */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0059b3; /* lighter blue */
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: 500;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #0073e6; /* even lighter blue on hover */
+  transform: scale(1.05);
+}
+
+/* Show hamburger only on small screens */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #004080;
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+#temples-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.temple-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  background: #fff;
+}
+
+.temple-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+footer {
+  min-height: 60px;
+  padding: 1rem;
+  text-align: center;
+  background-color: #004080;
+  color: white;
+  font-size: 0.9rem;
+}
