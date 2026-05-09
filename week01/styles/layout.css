@@ -1,0 +1,88 @@
+/* Reset some default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply Grid Layout to the whole page */
+body {
+    display: grid;
+
+    /* Define rows: header, main, footer */
+    grid-template-rows: auto 1fr auto;
+
+    /* Full screen height */
+    min-height: 100vh;
+
+    /* Font and colors */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+}
+
+/* Navigation using Flexbox */
+nav ul {
+    display: flex;
+
+    /* Remove bullets */
+    list-style: none;
+
+    /* Space between menu items */
+    gap: 20px;
+
+    margin-top: 10px;
+}
+
+/* Navigation Links */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Area */
+main {
+    display: grid;
+
+    /* Two-column layout */
+    grid-template-columns: 3fr 1fr;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+/* Section Styling */
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Aside Styling */
+aside {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
