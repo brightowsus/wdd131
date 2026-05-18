@@ -1,0 +1,99 @@
+/* Mobile View */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Hamburger Button */
+#menu-button {
+  display: block;
+  margin: 0 auto 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border: none;
+  background: white;
+  color: #003366;
+  cursor: pointer;
+}
+
+/* Navigation */
+nav {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #0055aa;
+}
+
+/* Main */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Gallery Grid */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+figure {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
