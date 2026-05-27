@@ -17,9 +17,9 @@
     padding: 1rem;
 }
 
-
-
+/* Large screen layout only */
 @media (min-width: 768px) {
+
     .overlay {
         position: absolute;
         bottom: 20px;
@@ -28,7 +28,9 @@
         gap: 1rem;
     }
 
-    .data, .weather {
+    /* ONLY override layout, NOT full styling */
+    .data,
+    .weather {
         width: 250px;
     }
 }
