@@ -1,24 +1,21 @@
-
 body {
   font-family: 'Poppins', sans-serif;
 }
 
-
-
-
+/* HEADER */
 header {
-  background-color: #004080; /* deep blue */
-  color: white;
+  background-color: #004080;
+  color: #ffffff;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 5px #00000026;
 }
 
-/* Title */
+/* TITLE */
 header h1 {
   margin: 0;
   font-size: 2rem;
@@ -28,7 +25,7 @@ header h1 {
   position: relative;
 }
 
-/* Navigation */
+/* NAVIGATION */
 nav ul {
   list-style: none;
   padding: 0;
@@ -42,7 +39,7 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: #ffffff;
-  background-color: #0059b3; /* lighter blue */
+  background-color: #0059b3;
   padding: 0.5rem 1rem;
   border-radius: 6px;
   transition: background-color 0.3s, transform 0.2s;
@@ -51,24 +48,24 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-  background-color: #0073e6; /* even lighter blue on hover */
+  background-color: #0073e6;
   transform: scale(1.05);
 }
 
-/* Show hamburger only on small screens */
+/* HAMBURGER MENU */
 .hamburger {
   display: none;
   font-size: 2rem;
   background: none;
   border: none;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
   position: absolute;
   top: 1rem;
   right: 1.5rem;
 }
 
-/* Responsive layout */
+/* RESPONSIVE NAV */
 @media (max-width: 768px) {
   nav ul {
     display: none;
@@ -91,6 +88,7 @@ nav ul li a:focus {
   }
 }
 
+/* TEMPLE GRID */
 #temples-container {
   display: flex;
   flex-wrap: wrap;
@@ -99,14 +97,15 @@ nav ul li a:focus {
   padding: 1rem;
 }
 
+/* TEMPLE CARD */
 .temple-card {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px #0000001a;
   max-width: 300px;
   text-align: center;
-  background: #fff;
+  background: #ffffff;
 }
 
 .temple-card img {
@@ -115,7 +114,7 @@ nav ul li a:focus {
   margin-top: 0.5rem;
 }
 
-
+/* MOBILE NAV ADJUSTMENT */
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
@@ -123,11 +122,12 @@ nav ul li a:focus {
   }
 }
 
+/* FOOTER */
 footer {
   min-height: 60px;
   padding: 1rem;
   text-align: center;
   background-color: #004080;
-  color: white;
+  color: #ffffff;
   font-size: 0.9rem;
 }
